@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+    margin: auto;
+    max-width: 500px;
+}
+p {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.p1 {
+    background-color: red;
+    background-image: url(C:\Users\JJ Menya\Desktop\Javatraining\Tek_Systems_CS\Images\Aboutme\IMG_0945.jpg);
+}
+img {
+    im
+}

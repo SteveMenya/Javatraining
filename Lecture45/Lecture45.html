@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture45</title>
     <script>
-        var company - new Object();
+        var company = new Object();
         company.name = "Facebook";
         company.ceo = new Object();
         company.ceo.firstname = "Mark";
         company.ceo.favColor = "blue";
 
         console.log(company);
-        company.log("Company CEO name is: " + company.ceo.firstname)
+        console.log("Company CEO name is: " + company.ceo.firstname)
+
+        console.log("The company name is: " + company["name"]);
 
     </script>
 </head>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script>
+        function multiply (x, y) {
+            return x * y;
+        }
+        console.log(multiply (5, 3));
+        multiply.version = "v.1.0.0";
+        console.log(multiply.version);
+
+
+        //Function factory
+        function makeMultiplier(multiplier) {
+            var myFunc = function (x) {
+                return multiplier * x;
+            };
+            return myFunc;
+           
+        }
+
+        var multiplyBy3 = makeMultiplier(3);
+        console.log(multiplyBy3(10));
+
+        var doubleAll = makeMultiplier(2);
+        console.log(doubleAll(100));
+
+        // Passing functions as arguments
+        function doOperationOn(x, operation);{
+            return operation(x);
+        }
+        var result = doOperationOn(5, multiplyBy3)
+        console.log(result);
+        
+    </script>
+</head>
+<body>
+    <h1> Functions Explained </h1>
+</body>
+</html>
